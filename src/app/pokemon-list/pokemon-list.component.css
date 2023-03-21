@@ -1,0 +1,27 @@
+.list-pokemons {
+  float: left;
+  width: 10%;
+  height: 300px;
+  margin-left: 10%;
+  overflow-y: scroll;
+}
+
+
+.currentPokemon {
+ margin-left: 70%
+}
+
+.pokemons {
+  padding-top: 5%;
+  text-align: left;
+  text-indent: 2%;
+}
+
+#search-bar {
+  margin-bottom: 1%;
+}
+
+input::placeholder {
+  color: grey;
+  font-style: italic;
+}

@@ -6,13 +6,14 @@ import { Subject } from 'rxjs';
 })
 export class ShareDetailService {
 
-	public stringVar = new Subject<string>();
+  private pokemonSubject = new Subject<string>();
 
-	getObservable(): Subject<string> {
-		return this.stringVar;
-	}
-	public setValue(newStringVar: string) {
-		this.stringVar.next(newStringVar);
-	}
+  sendPokemon(pokemon: string) {
+    this.pokemonSubject.next(pokemon);
+  }
+
+  getObservable(): Subject<string> {
+    return this.pokemonSubject;
+  }
 
 }

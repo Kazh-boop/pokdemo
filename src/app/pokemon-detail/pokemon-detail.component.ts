@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PokemonDetail } from '../pokemon';
+import { Pokemon, PokemonDetail } from '../pokemon';
 import { ShareDetailService } from '../share-detail.service';
 
 @Component({
@@ -8,12 +8,12 @@ import { ShareDetailService } from '../share-detail.service';
 	styleUrls: ['./pokemon-detail.component.css']
 })
 export class PokemonDetailComponent {
-	
+
 	@Input('detail')
-	detail!: PokemonDetail;
+	pokemon!: PokemonDetail;
 
 	constructor(private shareDetail: ShareDetailService) {
-		this.shareDetail.getObservable().subscribe(e => console.log('e ' + e));
+		this.shareDetail.getObservable().subscribe(e => console.log(e));
 	}
 
 

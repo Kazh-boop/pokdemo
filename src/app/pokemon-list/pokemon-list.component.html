@@ -1,0 +1,18 @@
+<div class="all">
+  <input id="search-bar" placeholder="Pikachu" [(ngModel)]="searchPokemonName"/>
+  <p><span class="explication">Cliquer sur le nom d'un pokémon pour afficher plus d'informations</span></p>
+  <div class="list-and-detail">
+    <div class="list-pokemons">
+      <div class="pokemons" *ngFor="let pokemon of pokemons | filterPokemonPipe:'name':searchPokemonName">
+        <span class="poke" (click)="viewPokemonDetails(pokemon)">{{pokemon.name}}</span>
+      </div>
+    </div>
+    <div class="currentPokemon">
+      <app-pokemon-detail
+        *ngIf="currentPokemon"
+        [detail]="currentPokemon"
+    ></app-pokemon-detail>
+    </div>
+  </div>
+</div>
+

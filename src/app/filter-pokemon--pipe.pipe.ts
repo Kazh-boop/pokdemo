@@ -11,7 +11,7 @@ export class FilterPokemonPipe implements PipeTransform {
 			    return e[property].toLowerCase().indexOf(searchString.toLowerCase()) !== -1;
 		    });
 		} else {
-		        return [];
+		    return [];
 		}
 	}
 

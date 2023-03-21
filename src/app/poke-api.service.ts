@@ -12,8 +12,8 @@ export class PokeAPIService {
 
 	constructor(private http: HttpClient) { }
 
-	getPokemons(): Observable<PokemonServiceRes> {
-		return this.http.get<PokemonServiceRes>(this.url);
+	getPokemons(offset: number, limit: number): Observable<PokemonServiceRes> {
+		return this.http.get<PokemonServiceRes>(this.url+"?offset="+offset+"&limit="+limit);
 	}
 
 	getPokemonInfo(id: string): Observable<PokemonDetail> {

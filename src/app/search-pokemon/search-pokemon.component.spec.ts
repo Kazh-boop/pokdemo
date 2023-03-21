@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SearchIdComponent } from './search-id.component';
+import { SearchPokemonComponent } from './search-pokemon.component';
 
-describe('SearchIdComponent', () => {
-  let component: SearchIdComponent;
-  let fixture: ComponentFixture<SearchIdComponent>;
+describe('SearchPokemonComponent', () => {
+  let component: SearchPokemonComponent;
+  let fixture: ComponentFixture<SearchPokemonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchIdComponent ]
+      declarations: [ SearchPokemonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SearchIdComponent);
+    fixture = TestBed.createComponent(SearchPokemonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
