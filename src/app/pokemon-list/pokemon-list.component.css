@@ -1,20 +1,36 @@
 .list-pokemons {
   float: left;
-  width: 10%;
-  height: 300px;
+  width: 25%;
+  height: 50%;
   margin-left: 10%;
   overflow-y: scroll;
 }
 
 
 .currentPokemon {
- margin-left: 70%
+  margin-left: 70%
 }
 
 .pokemons {
   padding-top: 5%;
   text-align: left;
   text-indent: 2%;
+  text-align: center;
+}
+
+
+
+.img-pokemon {
+  float: left;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  margin-right: 10%;
+}
+
+.name-pokemon {
+  padding: 15%;
+  text-align: start;
 }
 
 #search-bar {
@@ -25,3 +41,6 @@ input::placeholder {
   color: grey;
   font-style: italic;
 }
+
+
+

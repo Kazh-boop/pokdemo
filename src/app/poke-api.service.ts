@@ -8,7 +8,7 @@ import { PokemonDetail, PokemonServiceRes } from './pokemon';
 })
 export class PokeAPIService {
 
-	url: string = "https://pokeapi.co/api/v2/pokemon/"
+	private url: string = "https://pokeapi.co/api/v2/pokemon/";
 
 	constructor(private http: HttpClient) { }
 

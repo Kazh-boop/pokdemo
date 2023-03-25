@@ -1,6 +1,0 @@
-<input [(ngModel)]="searchPokemonName"/>
-<div *ngIf="!pokemonSearchResults">
-  <div *ngFor="let pokemon of pokemonDB | filterPokemonPipe:'name':searchPokemonName">
-  </div>
-</div>
-

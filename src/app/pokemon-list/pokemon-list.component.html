@@ -4,7 +4,10 @@
   <div class="list-and-detail">
     <div class="list-pokemons">
       <div class="pokemons" *ngFor="let pokemon of pokemons | filterPokemonPipe:'name':searchPokemonName">
-        <span class="poke" (click)="viewPokemonDetails(pokemon)">{{pokemon.name}}</span>
+        <div class="poke" (click)="viewPokemonDetails(pokemon)">
+          <img class="img-pokemon" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.id}}.png " alt="image of pokemon"> 
+          <p class="name-pokemon">{{pokemon.name}}</p>
+        </div>
       </div>
     </div>
     <div class="currentPokemon">
