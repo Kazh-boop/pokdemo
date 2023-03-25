@@ -1,46 +1,56 @@
+#ex-list-det {
+  text-align: center;
+  width: auto;
+  margin: 1% 5% 0 10%;
+}
+
 .list-pokemons {
   float: left;
   width: 25%;
-  height: 50%;
-  margin-left: 10%;
+  height: 720px;
   overflow-y: scroll;
 }
 
-
 .currentPokemon {
-  margin-left: 70%
+  position: absolute;
+  top: 40%;
+  margin-left: 50%;
+  width: fit-content;
+  vertical-align: middle;
 }
 
-.pokemons {
-  padding-top: 5%;
-  text-align: left;
-  text-indent: 2%;
-  text-align: center;
+.poke:hover {
+  background-color: lightgrey;
 }
 
-
+.poke {
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px 0;
+  height: 100px;
+  width: 100%;
+  margin: 0%;
+}
 
 .img-pokemon {
   float: left;
-  border-color: black;
-  border-style: solid;
-  text-align: center;
-  margin-right: 10%;
+  margin-left: auto;
+  height: 100%;
+  width: max-content;
 }
 
 .name-pokemon {
-  padding: 15%;
-  text-align: start;
+  padding: 25px 0;
 }
 
 #search-bar {
-  margin-bottom: 1%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 100%;
 }
 
 input::placeholder {
   color: grey;
   font-style: italic;
 }
-
-
-

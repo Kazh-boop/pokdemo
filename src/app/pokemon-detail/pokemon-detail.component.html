@@ -1,9 +1,11 @@
-<img [src]="pokemon.sprites.front_default" [alt]="'image of '+pokemon.name">
-<p>
-    id : {{pokemon.id}}
-    <br>
-    nom : {{pokemon.name}}
-    <br>
-    Type : <span class="type" *ngFor="let type of pokemon.types">{{type.type.name}} </span>
-</p>
+<div id="all">
+  <img [src]="pokemon.sprites.front_default" [alt]="'image of '+pokemon.name">
+  <p>
+      ID : {{pokemon.id}}
+      <br>
+      Nom : {{pokemon.name}}
+      <br>
+      Type : <span class="type" *ngFor="let type of pokemon.types">{{type.type.name}} </span>
+  </p>
+</div>
 

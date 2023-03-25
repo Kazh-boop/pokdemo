@@ -26,7 +26,6 @@ export class PokemonListComponent {
   }
 
   getPokemons(): void {
-    this.pokemons = [];
     this.service.getPokemons(this.offset, this.limit).subscribe((data) => {
       data.results.forEach((element, index) => {
         this.pokemons.push(

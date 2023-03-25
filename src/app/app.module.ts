@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 import { FilterPokemonPipe } from './filter-pokemon--pipe.pipe';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
-import { SearchPokemonComponent } from './search-pokemon/search-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { SearchPokemonComponent } from './search-pokemon/search-pokemon.componen
     FilterPokemonPipe,
     PokemonDetailComponent,
     PokemonListComponent,
-    SearchPokemonComponent,
   ],
   imports: [FormsModule, BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
